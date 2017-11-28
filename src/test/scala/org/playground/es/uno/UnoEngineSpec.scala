@@ -3,10 +3,8 @@ package org.playground.es.uno
 import org.playground.es.helpers.EsSpec
 import org.playground.es.uno.domain._
 
+// cf https://github.com/thinkbeforecoding/FsUno
 class UnoEngineSpec extends EsSpec(UnoEngine.emptyState, UnoEngine.decide, UnoEngine.evolve) {
-  // cf https://github.com/thinkbeforecoding/FsUno
-  // TODO: property based testing...
-
   // tests should not rely on state representation as it's an implementation detail and may change often...
   describe("when starting game") {
     it("should start a game") {
